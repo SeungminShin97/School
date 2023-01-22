@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mainpage</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body {
+                background-color: beige;
+                margin: 0;
+            }
+            .magic{
+                position: absolute;
+                width: 40%;
+                top: 1.5%;
+                left: 11.5%;
+                z-index: 2;
+            }
+            .magic:hover {
+                background-image: url("images/MagicIsland_click.png");
+                background-repeat: no-repeat;
+                background-position-x: 30%;
+                background-position-y: 40%;
+                background-size: 100%;
+                z-index: 3;
+            }
+            #lake {
+                position: absolute;
+                width: 110%;
+                transform: rotate(-15deg);
+                top: -18%;
+                left: -22%;
+                z-index: 1;
+            }
+            .adventure {
+                position: absolute;
+                width: 40%;
+                top: 35%;
+                left: 33%;
+                z-index: 2;
+            }
+            #ground {
+                position: absolute;
+                width: 90%;
+                transform: rotate(-15deg);
+                top: 23%;
+                left: 13%;
+            }
+            .adventure:hover {
+                background-image: url("images/Adventure1f_click.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position-x: 30%;
+                z-index: 3;
+            }
+            .kid {
+                position: absolute;
+                width: 40%;
+                top: 0%;
+                left: 63%;
+                z-index: 2;
+            }
+            .kid:hover {
+                background-image: url("images/Kid_zone_click.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .tag1 {
+                position: absolute;
+                top: 49%;
+                left: 13%;
+                transform: rotate(35deg);
+                z-index: 4;
+            }
+            #p1 {
+                position: absolute;
+                font-family: 'Book Antiqua', cursive;
+                font-size: 25px;
+                color: white;
+                transform: rotate(-35deg);
+                top: 37%;
+                left: 27%;
+            }
+            .tag2 {
+                position: absolute;
+                transform: rotate(180deg);
+                top: 25%;
+                left: 55%;
+                z-index: 4;
+            }
+            #p2 {
+                position: absolute;
+                font-family: 'Book Antiqua', cursive;
+                font-size: 25px;
+                color: white;
+                transform: rotate(145deg);
+                top: 47%;
+                left: 13%;
+            }
+            .tag3 {
+                position: absolute;
+                top: 48%;
+                left: 78%;
+                z-index: 4;
+            }
+            #p3 {
+                position: absolute;
+                font-family: 'Book Antiqua', cursive;
+                font-size: 25px;
+                color: white;
+                transform: rotate(-35deg);
+                top: 37%;
+                left: 27%;
+            }
+            .signpos {
+                position: absolute;
+                width: 7%;
+                top: 75%;
+                left: 87%;
+                z-index: 2;
+            }
+            .signpos:hover {
+                background-image: url("images/signpos_click.com.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                
+            }
+            #p4 {
+                position: absolute;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                top: 74%;
+                left: 88%;
+                z-index: 3;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <a href="magicIsland.html"><img class="magic" src="images/MagicIsland.png"></a>       
+        <a href="adventure1.html"><img class="adventure" src="images/Adventure1f.png"></a>
+        <a href="kid_zone.html"><img class="kid" src="images/Kid_zone.png"></a>
+        <a href="comeon.html"><img class="signpos" src="images/signpos.png"></a>
+        <img id="lake" src="images/lake.png">
+        <img id="ground" src="images/ground.png">
+        <div class="tag1">
+            <img id="img1" src="images/tag.png">
+            <p id="p1">Magic<br>Island</p>
+        </div>
+        <div class="tag2">
+            <img id="img2" src="images/tag.png">
+            <p id="p2">Adventure</p>
+        </div>
+        <div class="tag3">
+            <img id="img3" src="images/tag.png">
+            <p id="p3">Kid<br>Zone</p>
+        </div>
+        <p id="p4"><b>오시는 길</b></p>
+    </body>
+</html>

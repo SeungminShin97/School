@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About IU</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+            body {
+                background-color: black;
+                display: flex;
+            }
+            .video {
+                pointer-events: none;
+            }
+            .slogan{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                padding-left: 60px;
+                padding-right: 60px;
+                text-align: center;
+            }
+            .slogan a {
+                text-decoration: none;
+                opacity: 0;
+                font-size: 700%;
+            }
+            .slogan a:hover {
+                opacity: 1;
+                color: white;
+            }
+
+            
+    </style>
+    </head>
+    <body>
+        <div>
+            <iframe id="youtube" class="video"
+            style="display:block; width: 100vw; height: 100vh"
+            src="https://www.youtube.com/embed/0-q1KafFCLU?vq=hd720&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;mute=1"
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="slogan">
+            <h1><a href="profile.html">I U</a></h1>
+        </div>
+    </body>
+</html>

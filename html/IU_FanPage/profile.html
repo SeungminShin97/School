@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="base.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        .row { 
+            display: flex;
+        }
+        .col30 {
+            flex: 35%;
+        }
+        .col70 {
+            flex: 65%;
+        }
+
+        .img-1 {
+            background-image: url("images/profile1.jpg");
+            background-size: contain;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70%;  
+        }
+        #about h1, h2, h3 {
+            font-weight: bold;
+            margin-top: 30px;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        }
+        .img-2 {
+            background-image: url("images/profile4.jpg");
+            background-size: contain;
+            background-attachment: fixed;
+            background-position: 85%;
+            background-repeat: no-repeat;
+            height: 100%;  
+        }
+        .img-3 {
+            background-image: url("images/profile3.jpg");
+            background-size: contain;
+            background-attachment: fixed;
+            background-position: 15%;
+            background-repeat: no-repeat;
+            height: 100%;  
+        }
+        ul {
+           size: 20px;
+        }
+        .list-left p{
+            padding-left: 35%;
+        }
+
+        #aboutdetail {
+            font-size: 30px;
+            font-weight: 1000;
+        }
+        #aboutdate {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .grid {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto; 
+                grid-auto-rows: minmax(400px, auto);
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+            }
+    </style>
+
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="centernav">
+                <a href="profile.html" id="active">Profile</a>
+                <a href="album.html">Album</a>
+                <a href="sns.html">Sns</a>
+                <a href="filmography.html">Filmography</a>
+                <a href="main.html" id="navcenter">I&nbsp;&nbsp;&nbsp;U</a>
+                <a href="photo.html">Photo</a>
+                <a href="fanletter.html">Fan Letter</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="goodsshop.html">Goods Shop</a>
+            </div>
+        </div>
+        <div class="img-1 w3-display-container w3-opacity-min"></div>
+        <div id="about" class="w3-container w3-content w3-padding-64">
+            <h1 class="w3-center">아이유 / IU</h1>
+            <h2 class="w3-center">이지은</h2>
+            <h3 class="w3-center">1993.05.16</h3>
+        </div>
+
+
+        <div class="row">
+            <div class="col30">
+                <div class="w3-container w3-content w3-padding-64 list-left">
+                        <p id="aboutdetail">경찰청 명예순경</p><p id="aboutdate">2013.02</p>
+                        <p id="aboutdetail">경찰청 학교폭력 예방 홍보대사</p><p id="aboutdate">2012.02</p>
+                        <p id="aboutdetail">2012 여수세계박람회 홍보대사</p><p id="aboutdate">2011.05</p>
+                </div>
+            </div>
+            <div class="col70">
+                <div class="img-2 w3-display-container w3-opacity-min"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col70">
+                <div class="img-3 w3-display-container w3-opacity-min"></div>
+            </div>
+            <div class="col30 list-right">
+                <p id="aboutdetail">본명</p>
+                <p id="aboutdate">이지은 (李知恩, Lee Ji-eun)</p>
+                <p id="aboutdetail">출생</p>
+                <p id="aboutdate">1993년 5월 16일</p>
+                <p id="aboutdate">서울특별시 광진구</p>
+                <p id="aboutdetail">국적</p>
+                <p id="aboutdate">대한민국</p>
+                <p id="aboutdetail">본관</p>
+                <p id="aboutdate">전주 이씨</p>
+                <p id="aboutdetail">가족</p>
+                <p id="aboutdate">아버지, 어머니, 남동생</p>
+                <p id="aboutdetail">신체</p>
+                <p id="aboutdate">161cm O형</p>
+                <p id="aboutdetail">학력</p>
+                <p id="aboutdate">서울양남초등학교 (졸업)</p>
+                <p id="aboutdate">언주중학교 (졸업)</p>
+                <p id="aboutdate">동덕여자고등학교 (졸업)</p>
+            </div>
+        </div>
+
+        <footer class="w3-center w3-black w3-padding-16 w3-opacity">
+            <p>Made by 신승민</p>
+        </footer>
+    </body>
+</html>

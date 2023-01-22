@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_todolist">ToDoList</string>
+    <string name="title_post">Post</string>
+    <string name="title_calender">Calender</string>
+    <string name="todolist_addButton">ToDoList_AddButton</string>
+    <string name="todolist_saveButton">ToDoList_saveButton</string>
+    <string name="post_gallery_button">post_gallery_button</string>
+    <string name="post_title_add">Title</string>
+    <string name="post_tag_add">Tag</string>
+    <string name="post_text_add">Text</string>
+    <string name="post_saveButton">post_saveButton</string>
+    <string name="search_search">Search_search</string>
+</resources>

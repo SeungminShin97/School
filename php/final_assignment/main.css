@@ -1,0 +1,101 @@
+
+
+
+.grid > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+}
+.grid {
+    height: 700px;
+    display: grid;
+    column-gap: 10px; 
+    row-gap: 10px;
+    grid-template-areas: 
+        "b1 b2 b3 b4 b5"
+        "b6 b7 b8 b9 b10"
+        "b11 b12 b13 b14 b15"
+        "b16 b17 b18 b19 b20"
+        "b21 b22 b23 b24 b25"
+    ;
+}
+#box1 {
+    grid-area: b1;
+}
+#box2 {
+    grid-area: b2;
+}
+#box3 {
+    grid-area: b3;
+}
+#box4 {
+    grid-area: b4;
+}
+#box5 {
+    grid-area: b5;
+}
+#box6 {
+    grid-area: b6;
+}
+#box7 {
+    grid-area: b7;
+}
+#box8 {
+    grid-area: b8;
+}
+#box9 {
+    grid-area: b9;
+}
+#box10 {
+    grid-area: b10;
+}
+#box11 {
+    grid-area: b11;
+}
+#box12 {
+    grid-area: b12;
+}
+#box13 {
+    grid-area: b13;
+}
+#box14 {
+    grid-area: b14;
+}
+#box15 {
+    grid-area: b15;
+}
+#box16 {
+    grid-area: b16;
+}
+#box17 {
+    grid-area: b17;
+}
+#box18 {
+    grid-area: b18;
+}
+#box19 {
+    grid-area: b19;
+}
+#box20 {
+    grid-area: b20;
+}
+#box21 {
+    grid-area: b21;
+}
+#box22 {
+    grid-area: b22;
+}
+#box23 {
+    grid-area: b23;
+}
+#box24 {
+    grid-area: b24;
+}
+#box25 {
+    grid-area: b25;
+}
+.box:hover {
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0.7;
+}

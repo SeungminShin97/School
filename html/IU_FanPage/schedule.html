@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="base.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <style>
+  * {box-sizing: border-box;}
+  ul {list-style-type: none;}
+  body {
+    font-family: Verdana, sans-serif;
+    display: flex;
+  }
+
+  .g20 {
+    flex:20%;
+  }
+  .g60 {
+    flex: 60%;
+  }
+  .month {
+    padding: 150px 25px;
+    text-align: center;
+    justify-content: center;
+    background-image: url("images/schedule.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+
+  .days a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:14px;
+    color: black;
+  }
+
+  .date1 {
+    padding: 5px 40%;
+    background: #1abc9c;
+    color: white;
+  }
+  .date2 {
+    padding: 5px 40%;
+    background: yellow;
+    color: white;
+  }
+  .date3 {
+    padding: 5px 40%;
+    background: pink;
+    color: white;
+  }
+
+  .overlay {
+    background-color: rgba(255, 192, 203,0.2);
+    border-radius: 10px;
+    display: none;
+    }
+  
+  </style>
+  <script>
+    function openDetail(a) {
+      for(var i=0; i < 4; i++){
+        document.getElementById(i+1).style.display = "none";
+      }
+        document.getElementById(a).style.display = "block";
+    }
+</script>
+</head>
+<body>
+  <div class="topnav">
+    <div class="centernav">
+      <a href="profile.html">Profile</a>
+      <a href="album.html">Album</a>
+      <a href="sns.html">Sns</a>
+      <a href="filmography.html">Filmography</a>
+      <a href="main.html" id="navcenter">I&nbsp;&nbsp;&nbsp;U</a>
+      <a href="photo.html">Photo</a>
+      <a href="fanletter.html">Fan Letter</a>
+      <a href="schedule.html" id="active">Schedule</a>
+      <a href="goodsshop.html">Goods Shop</a>
+    </div>
+</div>
+
+<div class="g20"></div>
+<div class="g60">
+  <div class="month">      
+    <ul>
+      <li class="prev">&#10094;</li>
+      <li class="next">&#10095;</li>
+      <li>
+        JUNE<br>
+        <span style="font-size:18px">2021</span>
+      </li>
+    </ul>
+  </div>
+  
+  <ul class="weekdays">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
+  
+  <ul class="days">  
+    <li style="opacity: 0.5;">30</li>
+    <li style="opacity: 0.5;">31</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li><a href="javascript:void(0)" class="date1" onclick="openDetail(1)" style="cursor: pointer;">4</a></li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li><span class="active">10</span></li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li><a href="javascript:void(0)" class="date2" onclick="openDetail(2)" style="cursor: pointer;">16</a></li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li><a href="javascript:void(0)" class="date3" onclick="openDetail(3)" style="cursor: pointer;">24</a></li>
+    <li><a href="javascript:void(0)" class="date3" onclick="openDetail(4)" style="cursor: pointer;">25</a></li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+  </ul>
+
+  <div class="schedule">
+      <div id="1" class="overlay">
+        <h3>6월 4일 일정</h3>
+        <p>쇼 음악중심! 촬영</p>
+      </div>
+      <div id="2" class="overlay">
+        <h3>6월 16일 일정</h3>
+        <p>팬 싸인회</p>
+        <p>Tv 출연</p>
+      </div>
+      <div id="3" class="overlay">
+        <h3>6월 24일 일정</h3>
+        <p>1박 2일 촬영</p>
+      </div>
+      <div id="4" class="overlay">
+        <h3>6월 25일 일정</h3>
+        <p>1박 2일 촬영</p>
+      </div>
+  </div>
+
+
+</div>
+<div class="g20"></div>
+
+
+
+</body>
+</html>

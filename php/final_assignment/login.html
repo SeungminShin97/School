@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>포스기</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: cadetblue;
+            }
+            .login {
+                background-color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1>포스기</h1>
+            <form action="signin.php" method="post">
+                <table>
+                    <tr>
+                        <td><label>ID</label></td>
+                        <td colspan="2"><input type="text" name="uid"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td colspan="2"><input type="password" name="pwd"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="회원가입" onclick="location.href='signup.html'"></td>
+                        <td><input type="submit" value="로그인"></td>
+                    </tr>
+                </table>
+            </form> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="base.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        .top {
+            padding-top: 5%;
+            text-align: center;
+        }
+        .top img {
+            width: 30%;
+        }
+        #saytoiu {
+            text-align: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .grid {
+            display: flex;
+            padding: 5% 0;
+        }
+        .side {
+            flex: 30%;
+        }
+        .center {
+            flex: 40%;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            list-style-type: none;
+            background: #eee;
+            font-size: 18px;
+            transition: 0.2s;
+            
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        ul li:nth-child(odd) {
+            background: #f9f9f9;
+        }
+        ul li:hover {
+            background: #ddd;
+        }
+        ul li.checked::before {
+            content: '';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+        }
+        .header {
+            margin-top: 30px;
+            background-color: rgba(231, 127, 200, 0.3);
+            padding: 30px 40px;
+            color: black;
+            text-align: center;
+        }
+        .header:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #asdf {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        input {
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            width: 75%;
+            padding: 10px;
+            float: left;
+            font-size: 16px;
+        }
+        .addBtn {
+            padding: 10px;
+            width: 25%;
+            background: #d9d9d9;
+            color: #555;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 0;
+        }
+        .addBtn:hover {
+            background-color: #bbb;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="centernav">
+                <a href="profile.html">Profile</a>
+                <a href="album.html">Album</a>
+                <a href="sns.html">Sns</a>
+                <a href="filmography.html">Filmography</a>
+                <a href="main.html" id="navcenter">I&nbsp;&nbsp;&nbsp;U</a>
+                <a href="photo.html">Photo</a>
+                <a href="fanletter.html" id="active">Fan Letter</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="goodsshop.html">Goods Shop</a>
+            </div>
+        </div>
+        
+        <div class="top">
+            <img src="images/fanletter.jpg">
+            <h1 id="saytoiu">Fan Letter</h1>
+        </div>
+
+        <div class="grid">
+            <div class="side"></div>
+            <div class="center">
+                <ul id="myUL">
+                    <li style="color:rebeccapurple; font-weight:900;">*공지사항* 악플금지</li>
+                </ul>
+                <div id="myDIV" class="header">
+                    <h1 id="asdf" style="margin:5px">Message To Her</h1>
+                    <input type="text" id="myInput" placeholder="Msg...">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                </div>
+            </div>
+            <div class="side"></div>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+        <footer class="w3-center w3-black w3-padding-16 w3-opacity">       
+            <p>Made by 신승민</p>
+        </footer>
+
+        <script>
+            function newElement() {
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("myInput").value;
+                var t = document.createTextNode(inputValue);
+                li.appendChild(t);
+                if (inputValue === '') {
+                    alert("아이유씨에게 할 말이 없으신가요??");
+                } else {
+                    document.getElementById("myUL").appendChild(li);
+                }
+                document.getElementById("myInput").value = "";
+
+
+                for (i = 0; i < close.length; i++) {
+                    close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

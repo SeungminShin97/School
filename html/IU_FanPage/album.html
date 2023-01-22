@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Album</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="base.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 40px;
+        }
+        .album {
+            position: relative;
+            display: inline-block;
+            margin: 10px 6px;
+            overflow: hidden;
+        }
+        .albumname {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .album:hover .albumname {
+            font-size: 20px;
+            display: flex;
+            font-weight:900;
+            background: linear-gradient(to top, rgba(207, 101, 193,0.5),rgba(255,255,255,0.1));
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        .overlay a {
+            padding-top: 3%;
+            padding-left: 98%;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .overlaycontent {
+            position: relative;
+            display: flex;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .albumpic {
+            flex:40%
+        }
+        .albumpic p {
+            color: white;
+            font-size: 30px;
+        }
+        .song {
+            text-align: left;
+            flex: 60%;
+        }
+        .song p {
+            color: white;
+            font-size: 30px;
+        }
+        .song ul {
+            color: white;
+            font-size: 20px;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+    </style>
+    <script>
+        function openDetail(a) {
+            document.getElementById(a).style.width = "100%";
+        }
+        function closeDetail(a) {
+            document.getElementById(a).style.width = "0%";
+        }
+    </script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="centernav">
+                <a href="profile.html">Profile</a>
+                <a href="album.html" id="active">Album</a>
+                <a href="sns.html">Sns</a>
+                <a href="filmography.html">Filmography</a>
+                <a href="main.html" id="navcenter">I&nbsp;&nbsp;&nbsp;U</a>
+                <a href="photo.html">Photo</a>
+                <a href="fanletter.html">Fan Letter</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="goodsshop.html">Goods Shop</a>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="album">
+                <div id="25" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(25)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album25.jpg">
+                            <p>아이유</p>
+                            <p>LILAC</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>라일락</li>
+                                <li>FLU</li>
+                                <li>Coin</li>
+                                <li>봄 안녕 봄</li>
+                                <li>Celebrity</li>
+                                <li>돌림노래 (Feat. DEAN)</li>
+                                <li>빈 컵 (Empty Cup</li>
+                                <li>아이와 나의 바다</li>
+                                <li>djvn (Ah puh)</li>
+                                <li>에필로그</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album25.jpg">
+                <div class="albumname" onclick="openDetail(25)" style="cursor:pointer">
+                    <h3>LILAC</h3>
+                    <time>2021-03-25</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="24" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(24)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album24.jpg">
+                            <p>아이유</p>
+                            <p>I-LAND Part.1 Signal Song</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>Into the I-LAND</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album24.jpg">
+                <div class="albumname" onclick="openDetail(24)" style="cursor:pointer">
+                    <h3>I-LAND Part.1 Signal Song</h3>
+                    <time>2020-06-19</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="23" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(23)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album23.jpg">
+                            <p>아이유</p>
+                            <p>에잇</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>에잇 (Prod. & Feat. SUGA of BTS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album23.jpg">
+                <div class="albumname" onclick="openDetail(23)" style="cursor:pointer">
+                    <h3>에잇</h3>
+                    <time>2020-05-06</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="22" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(22)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album22.png">
+                            <p>아이유</p>
+                            <p>사랑의 불시착 OST Part.11</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>마음을 드려요</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album22.png">
+                <div class="albumname" onclick="openDetail(22)" style="cursor:pointer">
+                    <h3>사랑의 불시착 OST Part.11</h3>
+                    <time>2020-02-15</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="21" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(21)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album21.jpg">
+                            <p>성시경, 아이유</p>
+                            <p>첫 결울이니까</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>첫 겨울이니까</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album21.jpg">
+                <div class="albumname" onclick="openDetail(21)" style="cursor:pointer">
+                    <h3>첫 결울이니까</h3>
+                    <time>2019-12-09</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="20" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(20)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album20.jpg">
+                            <p>아이유</p>
+                            <p>Love Poem</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>unlucky</li>
+                                <li>그 사람</li>
+                                <li>Blueming</li>
+                                <li>시간의 바깥</li>
+                                <li>자장가</li>
+                                <li>Love poem</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album20.jpg">
+                <div class="albumname" onclick="openDetail(20)" style="cursor:pointer">
+                    <h3>Love Poem</h3>
+                    <time>2019-11-18</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="19" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(19)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album19.jpg">
+                            <p>아이유</p>
+                            <p>삐삐</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>삐삐</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album19.jpg">
+                <div class="albumname" onclick="openDetail(19)" style="cursor:pointer">
+                    <h3>삐삐</h3>
+                    <time>2018-10-10</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="18" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(18)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album18.jpg">
+                            <p>아이유</p>
+                            <p>꽃갈피 둘</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>가을 아침</li>
+                                <li>비밀의 화원</li>
+                                <li>잠 못 드는 밤 비는 내리고</li>
+                                <li>어젯밤 이야기</li>
+                                <li>개여울</li>
+                                <li>매일 그대와</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album18.jpg">
+                <div class="albumname" onclick="openDetail(18)" style="cursor:pointer">
+                    <h3>꽃갈피 둘</h3>
+                    <time>2017-09-22</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="17" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(17)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album17.jpg">
+                            <p>아이유</p>
+                            <p>Palette</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>이 지금</li>
+                                <li>팔레트 (Feat. G-DRAGON)</li>
+                                <li>이런 엔딩</li>
+                                <li>사랑이 잘 (With 오혁)</li>
+                                <li>잼잼</li>
+                                <li>Black Out</li>
+                                <li>마침표</li>
+                                <li>밤편지</li>
+                                <li>그렇게 사랑은</li>
+                                <li>이름에게</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album17.jpg">
+                <div class="albumname" onclick="openDetail(17)" style="cursor:pointer">
+                    <h3>Palette</h3>
+                    <time>2017-04-21</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="16" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(16)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album16.jpg">
+                            <p>아이유</p>
+                            <p>사랑이 잘</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>사랑이 잘 (With 오혁)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album16.jpg">
+                <div class="albumname" onclick="openDetail(16)" style="cursor:pointer">
+                    <h3>사랑이 잘</h3>
+                    <time>2017-04-07</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="15" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(15)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album15.jpg">
+                            <p>아이유</p>
+                            <p>밤편지</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>밤편지</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album15.jpg">
+                <div class="albumname" onclick="openDetail(15)" style="cursor:pointer">
+                    <h3>밤편지</h3>
+                    <time>2017-03-24</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="14" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(14)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album14.jpg">
+                            <p>아이유</p>
+                            <p>CHAT-SHIRE</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>새 신발</li>
+                                <li>Zezé</li>
+                                <li>스물셋</li>
+                                <li>푸르던</li>
+                                <li>Red Queen</li>
+                                <li>무릎</li>
+                                <li>안경</li>
+                                <li>마음</li>
+                                <li>Twenty three</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album14.jpg">
+                <div class="albumname" onclick="openDetail(14)" style="cursor:pointer">
+                    <h3>CHAT-SHIRE</h3>
+                    <time>2015-10-23</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="13" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(13)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album13.jpg">
+                            <p>아이유</p>
+                            <p>마음</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>마음</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album13.jpg">
+                <div class="albumname" onclick="openDetail(13)" style="cursor:pointer">
+                    <h3>마음</h3>
+                    <time>2015-05-18</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="12" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(12)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album12.jpg">
+                            <p>아이유</p>
+                            <p>소격동</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>소격동</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album12.jpg">
+                <div class="albumname" onclick="openDetail(12)" style="cursor:pointer">
+                    <h3>소격동</h3>
+                    <time>2014-10-02</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="11" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(11)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album11.jpg">
+                            <p>울랄라세션, 아이유</p>
+                            <p>애타는마음</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>애타는마음</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album11.jpg">
+                <div class="albumname" onclick="openDetail(11)" style="cursor:pointer">
+                    <h3>애타는마음</h3>
+                    <time>2014-06-30</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="10" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(10)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album10.jpg">
+                            <p>아이유</p>
+                            <p>꽃갈피</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>나의 옛날이야기</li>
+                                <li>꽃</li>
+                                <li>삐에로는 우릴 보고 웃지</li>
+                                <li>사랑이 지나가면</li>
+                                <li>너의 의미 (Feat. 김창완)</li>
+                                <li>여름밤의 꿈</li>
+                                <li>꿍따리 샤바라 (Feat. 클론)</li>
+                                <li>어허야 둥기둥기</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album10.jpg">
+                <div class="albumname" onclick="openDetail(10)" style="cursor:pointer">
+                    <h3>꽃갈피</h3>
+                    <time>2014-05-16</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="9" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(9)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album09.jpg">
+                            <p>하이포, 아이유</p>
+                            <p>봄 사랑 벚꽃 말고</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>봄 사랑 벚꽃 말고</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album09.jpg">
+                <div class="albumname" onclick="openDetail(9)" style="cursor:pointer">
+                    <h3>봄 사랑 벚꽃 말고</h3>
+                    <time>2014-10-02</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="8" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(8)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album08.jpg">
+                            <p>아이유</p>
+                            <p>Modern Times Epilogue</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>금요일에 만나요 (Feat. 장이정 Of HISTORY)</li>
+                                <li>크레파스</li>
+                                <li>을의 연애 (With 박주원)</li>
+                                <li>누구나 비밀은 있다 (Feat. 가인 Of Brown Eyed Girls)</li>
+                                <li>입술 사이 (50cm)</li>
+                                <li>분홍신</li>
+                                <li>Modern Times</li>
+                                <li>싫은 날</li>
+                                <li>Obliviate</li>
+                                <li>아이야 나랑 걷자 (Feat. 최백호)</li>
+                                <li>Havana</li>
+                                <li>우울시계 (Feat. 종현 Of SHINee)</li>
+                                <li>한낮의 꿈 (Feat. 양희은)</li>
+                                <li>기다려</li>
+                                <li>(Bonus Track) Voice Mail (Korean Ver.)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album08.jpg">
+                <div class="albumname" onclick="openDetail(8)" style="cursor:pointer">
+                    <h3>Modern Times Epilogue</h3>
+                    <time>2013-12-20</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="7" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(7)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album07.jpg">
+                            <p>아이유</p>
+                            <p>Modern Times Epilogue</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>을의 연애 (With 박주원)</li>
+                                <li>누구나 비밀은 있다 (Feat. 가인 Of Brown Eyed Girls)</li>
+                                <li>입술 사이 (50cm)</li>
+                                <li>분홍신</li>
+                                <li>Modern Times</li>
+                                <li>싫은 날</li>
+                                <li>Obliviate</li>
+                                <li>아이야 나랑 걷자 (Feat. 최백호)</li>
+                                <li>Havana</li>
+                                <li>우울시계 (Feat. 종현 Of SHINee)</li>
+                                <li>한낮의 꿈 (Feat. 양희은)</li>
+                                <li>기다려</li>
+                                <li>(Bonus Track) Voice Mail (Korean Ver.)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album07.jpg">
+                <div class="albumname" onclick="openDetail(7)" style="cursor:pointer">
+                    <h3>Modern Times</h3>
+                    <time>2013-10-10</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="6" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(6)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album06.jpg">
+                            <p>아이유</p>
+                            <p>스무 살의 봄</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>복숭아</li>
+                                <li>하루 끝</li>
+                                <li>그 애 참 싫다</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album06.jpg">
+                <div class="albumname" onclick="openDetail(6)" style="cursor:pointer">
+                    <h3>스무 살의 봄</h3>
+                    <time>2012-05-11</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="5" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(5)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album05.jpg">
+                            <p>아이유</p>
+                            <p>Last Fantasy</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>비밀</li>
+                                <li>잠자는 숲속의 왕자 (Feat. 윤상)</li>
+                                <li>별을 찾는 아이 (Feat. 김광진)</li>
+                                <li>너랑 나</li>
+                                <li>벽지무늬</li>
+                                <li>삼촌</li>
+                                <li>사랑니</li>
+                                <li>Everything's Alright (Feat. 김현철)</li>
+                                <li>Last Fantasy</li>
+                                <li>Teacher (Feat. Ra.D)</li>
+                                <li>길 잃은 강아지</li>
+                                <li>4AM</li>
+                                <li>라망 (L'amant)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album05.jpg">
+                <div class="albumname" onclick="openDetail(5)" style="cursor:pointer">
+                    <h3>Last Fantasy</h3>
+                    <time>2011-11-29</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="4" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(4)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album04.jpg">
+                            <p>아이유</p>
+                            <p>얼음꽃</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>얼음꽃</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album04.jpg">
+                <div class="albumname" onclick="openDetail(4)" style="cursor:pointer">
+                    <h3>얼음꽃</h3>
+                    <time>2011-06-21</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="3" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(3)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album03.jpg">
+                            <p>아이유</p>
+                            <p>최고의 사랑 OST Part.4</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>내 손을 잡아</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album03.jpg">
+                <div class="albumname" onclick="openDetail(3)" style="cursor:pointer">
+                    <h3>최고의 사랑 OST Part.4</h3>
+                    <time>2011-05-25</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="2" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(2)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album02.jpg">
+                            <p>아이유</p>
+                            <p>Real+</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>나만 몰랐던 이야기</li>
+                                <li>잔혹동화</li>
+                                <li>나만 몰랐던 이야기 (With Pianist 김광민)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album02.jpg">
+                <div class="albumname" onclick="openDetail(2)" style="cursor:pointer">
+                    <h3>Real+</h3>
+                    <time>2011-02-17</time>
+                </div>
+            </div>
+            <div class="album">
+                <div id="1" class="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeDetail(1)">&times;</a>
+                    <div class="overlaycontent">
+                        <div class="albumpic">
+                            <img src="images/album01.jpg">
+                            <p>아이유</p>
+                            <p>Real</p>
+                        </div>
+                        <div class="song">
+                            <p>Tracklist</p>
+                            <ul>
+                                <li>이게 아닌데</li>
+                                <li>느리게 하는 일</li>
+                                <li>좋은 날</li>
+                                <li>첫 이별 그날 밤</li>
+                                <li>혼자 있는 방</li>
+                                <li>미리 메리 크리스마스 (Feat. 천둥 of MBLAQ)</li>
+                                <li>좋은 날 (Inst.)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/album01.jpg">
+                <div class="albumname" onclick="openDetail(1)" style="cursor:pointer">
+                    <h3>Real</h3>
+                    <time>2010-12-09</time>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="w3-center w3-black w3-padding-16 w3-opacity">       
+            <p>Made by 신승민</p>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <title>롯데월드 가이드맵</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            #movie{
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            #play{
+                position:absolute;
+                top: 0;
+                right: 0;
+                border: none;
+                background-color: black;
+                color: white;
+                padding: 5px;
+            }
+            .slogan{
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%,-10%);
+                color: white;
+                background-color: rgba(0,0,0,0.2);
+                padding-left: 60px;
+                padding-right: 60px;
+                text-align: center;
+                border-radius: 15px;
+            }
+            h1{
+                font-family: 'Book Antiqua', cursive;
+                font-size: 300%;
+                margin-bottom: 30px;
+                font-style: italic;
+                
+            }
+            .slogan button{
+                border: none;
+                padding: 10px 25px;
+                margin-bottom: 15px;
+                background-color: #ddd; 
+                text-align: center;
+                cursor: pointer;
+                border-radius: 5%;
+            }
+            .slogan button a {
+                text-decoration: none;
+                color: black;
+            }
+            .slogan button:hover{
+                background-color: black;
+                color: white;
+            }
+            .slogan button:hover a{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <video id="movie" autoplay loop muted>
+            <source src="movie.mp4" tyep="video/mp4">
+        </video>
+
+        <div class="slogan">
+            <h1>Lotte World Guide Map</h1>
+            <button onclick="location.href='main.html'">Enter</button>
+            <h5>2017.version</h5>
+        </div>
+
+        <botton id="play" onclick="myFunc()"><i class="material-icons">pause</i></botton>
+        <script>
+            var video = document.getElementById("movie");
+            var btn = document.getElementById("play");
+
+            function myFunc(){
+                if(video.paused){
+                    video.play();
+                    btn.innerHTML = '<i class="material-icons">pause</i>';
+                }
+                else{
+                    video.pause();
+                    btn.innerHTML = '<i class="material-icons">play_arrow</i>';
+                }
+            }
+        </script>
+    </body>
+    
+</html>

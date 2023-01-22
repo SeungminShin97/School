@@ -1,0 +1,346 @@
+body {
+    background-color: beige;
+    margin: 0;
+}
+.material-icons.home {
+    padding: 15px 15px;
+    font-size: 40px;
+    color: black;
+}
+.row {
+    display: flex;
+}
+.column1 {
+    flex: 65%;
+}
+.column1 img {
+    width: 90%;
+}
+.column2 {
+    flex: 35%;
+}
+
+.point img {
+    position: absolute;
+    width: 8%;
+}
+.point p {
+    position: absolute;
+    color: black;
+    font-size: 1.1em;
+}
+#list1 {
+    position: absolute;
+    top: -1%;
+    width: 600px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    list-style-type: none;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+}
+#list1 b {
+    color: red;
+}
+#list2 {
+    position: absolute;
+    top: 45%;
+    width: 600px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    list-style-type: none;
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+}
+#list2 b {
+    color: green;
+}
+#list3 {
+    position: absolute;
+    top: 82%;
+    margin-bottom: 0;
+    width: 600px;
+    padding-left: 0;
+    padding-bottom: 0;
+    list-style-type: none;
+    border-top: 5px solid skyblue;
+    border-bottom: 5px solid skyblue;
+}
+#list3 b {
+    color: skyblue;
+}
+
+#ir1 {
+    top: 40%;
+    left: 33%;
+}
+#pr1 {
+    top: 40.8%;
+    left: 35.8%;
+}
+#ir2 {
+    top: 18.5%;
+    left: 25.5%;
+}
+#pr2 {
+    top: 19.3%;
+    left: 28.3%;
+}
+#ir3 {
+    top: 35%;
+    left: 19%;
+}
+#pr3 {
+    top: 35.8%;
+    left: 21.8%;
+}
+#ir4 {
+    top: 36.7%;
+    left: 20.5%;
+}
+#pr4 {
+    top: 37.5%;
+    left: 23.3%;
+}
+#ir5 {
+    top: 41%;
+    left: 19.5%;
+}
+#pr5 {
+    top: 41.8%;
+    left: 22.3%;
+}
+#ir6 {
+    top: 46.5%;
+    left: 20.4%;
+}
+#pr6 {
+    top: 47.3%;
+    left: 23.2%;
+}
+#ir7 {
+    top: 46%;
+    left: 15.5%;
+}
+#pr7 {
+    top: 46.8%;
+    left: 18.3%;
+}
+#ir8 {
+    top: 54%;
+    left: 15%;
+}
+#pr8 {
+    top: 54.8%;
+    left: 17.8%;
+}
+#ir9 {
+    top: 73%;
+    left: 8.5%;
+}
+#pr9 {
+    top: 73.8%;
+    left: 11.3%;
+}
+#ir10 {
+    top: 60%;
+    left: 15%;
+}
+#pr10 {
+    top: 60.8%;
+    left: 17.5%;
+}
+#ir11 {
+    top: 70%;
+    left: 21%;
+}
+#pr11 {
+    top: 70.8%;
+    left: 23.5%;
+}
+#ir12 {
+    top: 78%;
+    left: 23.5%;
+}
+#pr12 {
+    top: 78.8%;
+    left: 26%;
+}
+#ir13 {
+    top: 75%;
+    left: 20%;
+}
+#pr13 {
+    top: 75.8%;
+    left: 22.5%;
+}
+#ir14 {
+    top: 72%;
+    left: 25%;
+}
+#pr14 {
+    top: 72.8%;
+    left: 27.5%;
+}
+#ir15 {
+    top: 57%;
+    left: 23%;
+}
+#pr15 {
+    top: 57.8%;
+    left: 25.5%;
+}
+#ir16 {
+    top: 36%;
+    left: 37%;
+}
+#pr16 {
+    top: 36.8%;
+    left: 39.5%;
+}
+#ir17 {
+    top: 67.5%;
+    left: 15%;
+}
+#pr17 {
+    top: 68.3%;
+    left: 17.5%;
+}
+
+#ig1 {
+    top: 60%;
+    left: 36.5%;
+}
+#pg1 {
+    top: 60.8%;
+    left: 39.3%;
+}
+#ig2 {
+    top: 53%;
+    left: 34%;
+}
+#pg2 {
+    top: 53.8%;
+    left: 36.8%;
+}
+#ig3 {
+    top: 53%;
+    left: 19.5%;
+}
+#pg3 {
+    top: 53.8%;
+    left: 22.3%;
+}
+#ig4 {
+    top: 53.5%;
+    left: 30.7%;
+}
+#pg4 {
+    top: 54.3%;
+    left: 33.5%;
+}
+#ig5 {
+    top: 52%;
+    left: 13%;
+}
+#pg5 {
+    top: 52.8%;
+    left: 15.8%;
+}
+#ig6 {
+    top: 60%;
+    left: 11%;
+}
+#pg6 {
+    top: 60.8%;
+    left: 13.8%;
+}
+#ig7 {
+    top: 77%;
+    left: 16%;
+}
+#pg7 {
+    top: 77.8%;
+    left: 18.8%;
+}
+#ig8 {
+    top: 40%;
+    left: 28.5%;
+}
+#pg8 {
+    top: 40.8%;
+    left: 31.3%;
+}
+#ig9 {
+    top: 58%;
+    left: 19%;
+}
+#pg9 {
+    top: 58.8%;
+    left: 21.8%;
+}
+#ig10 {
+    top: 65%;
+    left: 21%;
+}
+#pg10 {
+    top: 65.8%;
+    left: 23.5%;
+}
+#ig11 {
+    top: 34%;
+    left: 16%;
+}
+#pg11 {
+    top: 34.8%;
+    left: 18.5%;
+}
+#ig12 {
+    top: 45%;
+    left: 24%;
+}
+#pg12 {
+    top: 45.8%;
+    left: 26.5%;
+}
+#ig13 {
+    top: 45%;
+    left: 27.5%;
+}
+#pg13 {
+    top: 45.8%;
+    left: 30%;
+}
+
+#ib1 {
+    top: 57%;
+    left: 27.5%;
+}
+#pb1 {
+    top: 57.8%;
+    left: 30.3%;
+}
+#ib2 {
+    top: 60%;
+    left: 30%;
+}
+#pb2 {
+    top: 60.8%;
+    left: 32.8%;
+}
+#ib3 {
+    top: 37%;
+    left: 24%;
+}
+#pb3 {
+    top: 37.8%;
+    left: 26.8%;
+}
+#ib4 {
+    top: 55%;
+    left: 12.5%;
+}
+#pb4 {
+    top: 55.8%;
+    left: 15.3%;
+}

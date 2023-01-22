@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title>오시는길</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body {
+                background-color: beige;
+            }
+            .row {
+                display: flex;
+            }
+            .c1 {
+                flex: 50%;
+            }
+            .c2 {
+                flex: 50%;
+            }
+            .map {
+                position: absolute;
+                top: 10%;
+                left: 5%;
+            }
+            .material-icons.home {
+                padding: 15px 15px;
+                font-size: 40px;
+                color: black;
+            }
+            .map iframe {
+                border: 2px dotted black;
+            }
+            p {
+                font-size: 30px;
+            }
+            .green {
+                background-color: greenyellow;
+                border-radius: 5px;
+            }
+            .violet {
+                background-color: violet;
+                border-radius: 5px;
+            }
+            .red {
+                background-color: red;
+                border-radius: 5px;
+            }
+            .blue {
+                background-color: skyblue;
+                border-radius: 5px;
+            }
+            .brown {
+                background-color: brown;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="main.html"><i class="material-icons home">home</i></a>
+        <div class="row">
+            <div class="c1">
+                <div class="map">
+                    <p><b>오시는 길</b></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8642382893954!2d127.09597831564703!3d37.511120035057075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5a7250efe81%3A0x433df2c1fec03b98!2z66Gv642w7JuU65Oc!5e0!3m2!1sko!2skr!4v1620310079683!5m2!1sko!2skr" width="200%" height="600" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="c2">
+                <ul>
+                    <p><b>지하철 이용시</b></p>
+                    <li><b class="green">2호선</b> : 잠실역 4번 출구</li>
+                    <li><b class="violet">8호선</b> : 잠실역 8번 출구</li>
+                </ul>
+                <ul>
+                    <p><b>버스 이용시</b></p>
+                    <li><b class="green">지선</b> : 3217번, 3313번, 3314번, 3315번, 3317번, 3411번, 3414번, 4319번</li>
+                    <li><b class="red">광역</b> : 1007-1번, 1100번, 1700번, 2000번, 6900번, 7007번, 8001번</li>
+                    <li><b class="blue">간선</b> : 301번, 341번, 360번, 362번</li>
+                    <li><b class="brown">공항</b> : 6000번, 6006번, 6705번, 6706A번</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

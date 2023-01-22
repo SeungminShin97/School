@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1205" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/drawable/border.xml" value="0.255" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_calendar.xml" value="0.264" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_calendar_item.xml" value="0.2484375" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_dashboard.xml" value="0.24947916666666667" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_home.xml" value="0.24947916666666667" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_home_item.xml" value="0.264" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_post.xml" value="0.264" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_post_save.xml" value="0.4" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_search.xml" value="0.264" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_search_item.xml" value="0.2484375" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_todolist.xml" value="0.264" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_todolist_add.xml" value="0.24947916666666667" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/fragment_todolist_item.xml" value="0.2484375" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/layout/ivity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1205" />
+        <entry key="..\:/School/3-2/Android/DiaryTest/app/src/main/res/xml/file_paths.xml" value="0.24947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

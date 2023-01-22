@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>메뉴 생성</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: cadetblue;
+            }
+            .login {
+                background-color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1>메뉴 생성</h1>
+            <form action="makemenu.php" method="post">
+                <table>
+                    <tr>
+                        <td><label>메뉴 이름</label></td>
+                        <td colspan="2"><input type="text" name="menuname"></td>
+                    </tr>
+                    <tr>
+                        <td><label>카테고리</label></td>
+                        <td colspan="2">
+                            <select name="cat">
+                            <option value="main">메인메뉴</option>
+                            <option value="side">사이드메뉴</option>
+                            <option value="drink">음료</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>가격</label></td>
+                        <td colspan="2"><input type="text" name="price"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="뒤로가기" onclick="location.href='setting.html'"></td>
+                        <td><input type="submit" value="만들기"></td>
+                    </tr>
+                </table>
+            </form> 
+        </div>
+    </body>
+</html>
