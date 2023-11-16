@@ -1,0 +1,77 @@
+<!DOCTYPE mapper
+
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.second.mapper.BoardMapper">
+
+
+
+  <insert id="create">
+
+ insert into second (title, content, writer) 
+
+ values(#{title},#{content}, #{writer})
+
+ </insert>
+
+
+
+ <select id="read" resultType="com.second.domain.BoardVO">
+
+ select 
+
+   bno, title, content, writer, regdate, viewcnt 
+
+ from 
+
+   second 
+
+ where bno = #{bno}
+
+ </select>
+
+
+
+ <update id="update">
+
+ update second set title =#{title}, content =#{content} 
+
+ where bno = #{bno}
+
+ </update>
+
+
+
+ <delete id="delete">
+
+ delete from second where bno = #{bno}
+
+ </delete>
+
+
+
+ <select id="listAll" resultType="com.second.domain.BoardVO">
+
+ <![CDATA[
+
+ select 
+
+   bno, title, content, writer, regdate, viewcnt 
+
+ from 
+
+   second 
+
+ where bno > 0 
+
+ order by bno desc, regdate desc
+
+ ]]>  
+
+ </select>
+
+ </mapper>
